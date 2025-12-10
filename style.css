@@ -1,7 +1,7 @@
 :root {
     /* Color Palette - Modern & Vibrant */
     --primary-hue: 220;
-    --accent-hue: 280;
+    --accent-hue: 180;
 
     --bg-dark: hsl(40, 30%, 94%);
     --bg-darker: hsl(40, 35%, 97%);
@@ -16,8 +16,8 @@
     --primary-light: hsl(var(--primary-hue), 80%, 70%);
     --primary-dark: hsl(var(--primary-hue), 80%, 50%);
 
-    --accent: hsl(var(--accent-hue), 70%, 65%);
-    --accent-light: hsl(var(--accent-hue), 70%, 75%);
+    --accent: hsl(var(--accent-hue), 50%, 40%);
+    --accent-light: hsl(var(--accent-hue), 50%, 45%);
 
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     --gradient-card: linear-gradient(135deg, hsl(40, 25%, 91%) 0%, hsl(40, 25%, 89%) 100%);
@@ -441,7 +441,7 @@ section {
 
 .edu-item {
     padding: var(--spacing-md);
-    background: hsla(220, 18%, 10%, 0.5);
+    background: hsl(40, 25%, 88%);
     border-radius: 8px;
     border: 1px solid var(--border);
     margin-bottom: var(--spacing-sm);
