@@ -3,13 +3,13 @@
     --primary-hue: 220;
     --accent-hue: 280;
 
-    --bg-dark: hsl(215, 25%, 15%);
-    --bg-darker: hsl(215, 28%, 12%);
-    --bg-card: hsl(215, 23%, 19%);
-    --bg-card-hover: hsl(215, 23%, 22%);
+    --bg-dark: hsl(40, 30%, 94%);
+    --bg-darker: hsl(40, 35%, 97%);
+    --bg-card: hsl(40, 25%, 91%);
+    --bg-card-hover: hsl(40, 25%, 88%);
 
-    --text-primary: hsl(0, 0%, 98%);
-    --text-secondary: hsl(220, 10%, 70%);
+    --text-primary: hsl(220, 20%, 15%);
+    --text-secondary: hsl(220, 15%, 35%);
     --text-muted: hsl(220, 10%, 50%);
 
     --primary: hsl(var(--primary-hue), 80%, 60%);
@@ -22,8 +22,8 @@
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     --gradient-card: linear-gradient(135deg, hsl(220, 18%, 14%) 0%, hsl(220, 18%, 11%) 100%);
 
-    --border: hsl(220, 15%, 20%);
-    --border-light: hsl(220, 15%, 25%);
+    --border: hsl(40, 15%, 75%);
+    --border-light: hsl(40, 15%, 70%);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -78,7 +78,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: hsla(220, 20%, 8%, 0.8);
+    background: hsla(40, 30%, 94%, 0.9);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     transition: var(--transition);
