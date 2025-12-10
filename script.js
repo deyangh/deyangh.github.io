@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentScroll = window.pageYOffset;
 
         if (currentScroll > 100) {
-            navbar.style.background = 'hsla(220, 20%, 8%, 0.95)';
-            navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.3)';
+            navbar.style.background = 'hsla(40, 30%, 94%, 0.98)';
+            navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.1)';
         } else {
-            navbar.style.background = 'hsla(220, 20%, 8%, 0.8)';
+            navbar.style.background = 'hsla(40, 30%, 94%, 0.9)';
             navbar.style.boxShadow = 'none';
         }
 

@@ -19,7 +19,7 @@
     --accent: hsl(var(--accent-hue), 50%, 40%);
     --accent-light: hsl(var(--accent-hue), 50%, 45%);
 
-    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    --gradient-primary: hsl(var(--primary-hue), 80%, 60%);
     --gradient-card: linear-gradient(135deg, hsl(40, 25%, 91%) 0%, hsl(40, 25%, 89%) 100%);
 
     --border: hsl(40, 15%, 75%);
