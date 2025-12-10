@@ -3,10 +3,10 @@
     --primary-hue: 220;
     --accent-hue: 280;
 
-    --bg-dark: hsl(220, 20%, 8%);
-    --bg-darker: hsl(220, 22%, 5%);
-    --bg-card: hsl(220, 18%, 12%);
-    --bg-card-hover: hsl(220, 18%, 15%);
+    --bg-dark: hsl(220, 18%, 16%);
+    --bg-darker: hsl(220, 18%, 12%);
+    --bg-card: hsl(220, 16%, 20%);
+    --bg-card-hover: hsl(220, 16%, 23%);
 
     --text-primary: hsl(0, 0%, 98%);
     --text-secondary: hsl(220, 10%, 70%);
