@@ -12,12 +12,12 @@
     --text-secondary: hsl(220, 15%, 35%);
     --text-muted: hsl(220, 10%, 50%);
 
-    --primary: hsl(var(--primary-hue), 70%, 38%);
-    --primary-light: hsl(var(--primary-hue), 65%, 42%);
-    --primary-dark: hsl(var(--primary-hue), 75%, 32%);
+    --primary: hsl(var(--primary-hue), 70%, 28%);
+    --primary-light: hsl(var(--primary-hue), 65%, 32%);
+    --primary-dark: hsl(var(--primary-hue), 75%, 24%);
 
-    --accent: hsl(var(--accent-hue), 55%, 32%);
-    --accent-light: hsl(var(--accent-hue), 55%, 38%);
+    --accent: hsl(var(--accent-hue), 60%, 25%);
+    --accent-light: hsl(var(--accent-hue), 58%, 28%);
 
     --gradient-primary: hsl(var(--primary-hue), 80%, 60%);
     --gradient-card: linear-gradient(135deg, hsl(40, 25%, 91%) 0%, hsl(40, 25%, 89%) 100%);
