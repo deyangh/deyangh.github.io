@@ -441,7 +441,7 @@ section {
 
 .edu-item {
     padding: var(--spacing-md);
-    background: hsl(40, 25%, 88%);
+    background: hsl(35, 35%, 89%);
     border-radius: 8px;
     border: 1px solid var(--border);
     margin-bottom: var(--spacing-sm);
