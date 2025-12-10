@@ -12,9 +12,9 @@
     --text-secondary: hsl(220, 15%, 35%);
     --text-muted: hsl(220, 10%, 50%);
 
-    --primary: hsl(var(--primary-hue), 80%, 60%);
-    --primary-light: hsl(var(--primary-hue), 80%, 70%);
-    --primary-dark: hsl(var(--primary-hue), 80%, 50%);
+    --primary: hsl(var(--primary-hue), 70%, 45%);
+    --primary-light: hsl(var(--primary-hue), 65%, 50%);
+    --primary-dark: hsl(var(--primary-hue), 75%, 40%);
 
     --accent: hsl(var(--accent-hue), 50%, 40%);
     --accent-light: hsl(var(--accent-hue), 50%, 45%);
