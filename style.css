@@ -1,7 +1,7 @@
 :root {
     /* Color Palette - Modern & Vibrant */
-    --primary-hue: 220;
-    --accent-hue: 180;
+    --primary-hue: 200;
+    --accent-hue: 170;
 
     --bg-dark: hsl(40, 30%, 94%);
     --bg-darker: hsl(40, 35%, 97%);
@@ -12,12 +12,12 @@
     --text-secondary: hsl(220, 15%, 35%);
     --text-muted: hsl(220, 10%, 50%);
 
-    --primary: hsl(var(--primary-hue), 70%, 35%);
-    --primary-light: hsl(var(--primary-hue), 65%, 40%);
-    --primary-dark: hsl(var(--primary-hue), 75%, 28%);
+    --primary: hsl(var(--primary-hue), 85%, 42%);
+    --primary-light: hsl(var(--primary-hue), 80%, 48%);
+    --primary-dark: hsl(var(--primary-hue), 90%, 35%);
 
-    --accent: hsl(var(--accent-hue), 55%, 30%);
-    --accent-light: hsl(var(--accent-hue), 55%, 35%);
+    --accent: hsl(var(--accent-hue), 70%, 35%);
+    --accent-light: hsl(var(--accent-hue), 70%, 40%);
 
     --gradient-primary: var(--primary);
     --gradient-card: linear-gradient(135deg, hsl(40, 25%, 91%) 0%, hsl(40, 25%, 89%) 100%);
