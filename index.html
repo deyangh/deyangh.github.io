@@ -112,6 +112,9 @@
                         </div>
                         <p class="edu-degree">Master's in Computer Science</p>
                         <p class="edu-detail">Viterbi School of Engineering</p>
+                        <p class="edu-coursework"><strong>Relevant Coursework:</strong> Natural Language Processing
+                            (NLP), Large Language Models (LLMs), Machine Learning, Deep Learning, Computer Vision,
+                            Parallel Computing, Database Systems, Operating Systems, Algorithms, Web Crawling.</p>
                         <p class="edu-location">Los Angeles, California</p>
                     </div>
                     <div class="edu-item">
@@ -120,8 +123,8 @@
                             <span class="edu-date">2018 - 2022</span>
                         </div>
                         <p class="edu-degree">B.S. in Electrical & Computer Engineering</p>
-                        <p class="edu-detail">Magna Cum Laude | Dean's List Scholar | Alumni Scholarship</p>
-                        <p class="edu-gpa">GPA: 3.769/4.0</p>
+                        <p class="edu-detail">Magna Cum Laude | Dean's List Scholar | Alumni Society Scholarship</p>
+                        <p class="edu-gpa">GPA: 3.77/4.0</p>
                     </div>
                 </div>
             </div>
@@ -137,52 +140,43 @@
                 <div class="research-card featured">
                     <div class="card-badge">Featured</div>
                     <h3>Spatio-Temporal Wildfire Prediction</h3>
-                    <p class="research-role">Research Assistant | FORTIS Lab, USC | January 2025 - Present</p>
+                    <p class="research-role">Research Assistant | FORTIS Lab, USC | Jan. 2025 - Present</p>
                     <p class="research-advisor">Advisor: Professor Zhao Yue</p>
 
                     <div class="research-description">
                         <p>
-                            Developing robust, trustworthy, and scalable AI systems for wildfire prediction,
-                            emphasizing anomaly detection and out-of-distribution generalization across diverse
-                            environmental conditions.
+                            Architected a state-of-the-art spatiotemporal pipeline fusing <strong>ERA5</strong> and
+                            <strong>LANDFIRE</strong> data.
+                            Designed a <strong>Hybrid Mamba (Selective State Space)</strong> and <strong>Temporal Fusion
+                                Transformer</strong>
+                            model to capture long-range dependencies.
                         </p>
 
                         <h4>Key Contributions:</h4>
                         <ul class="contribution-list">
                             <li>
-                                <strong>Temporal Fusion Transformer (TFT) Architecture:</strong>
-                                Designed and implemented an interpretable transformer-based model combining
-                                LSTM for temporal patterns and multi-head self-attention for long-range
-                                dependencies, achieving F1 scores of 0.24-0.28 in wildfire prediction tasks.
-                            </li>
-                            <li>
-                                <strong>Graph Neural Networks for Spatial Modeling:</strong>
-                                Integrated Graph Convolutional Networks (GCN) to capture spatial dependencies
-                                across county adjacency networks, improving prediction accuracy by leveraging
-                                geographic correlations.
-                            </li>
-                            <li>
-                                <strong>Multi-Source Data Fusion:</strong>
-                                Architected data pipelines processing ERA5 weather reanalysis (temperature,
-                                wind, precipitation, solar radiation) and vegetation indices (LAI, NDVI) across
-                                116,000+ time-county observations spanning 2021-2025.
+                                <strong>Hybrid Architecture Design:</strong>
+                                Implemented a hybrid Mamba and Transformer model utilizing <strong>Graph Neural Networks
+                                    (GCN)</strong>
+                                for spatial message passing, achieving a <strong>15% F1 gain</strong> over baselines.
                             </li>
                             <li>
                                 <strong>Production-Scale Optimization:</strong>
-                                Implemented A100 GPU optimizations (TF32 acceleration, torch.compile, mixed
-                                precision training) achieving 10-50x speedup over CPU baselines, reducing
-                                full training time from 8+ hours to 25-35 minutes.
+                                Optimized training for <strong>NVIDIA A100s</strong> using mixed-precision (AMP) and
+                                <code>torch.compile</code>, achieving a <strong>20x speedup</strong> (reducing training
+                                time
+                                from 8+ hours to ~25 mins).
                             </li>
                             <li>
                                 <strong>Advanced Loss Functions:</strong>
-                                Developed Focal Loss implementation with adaptive thresholding to address
-                                severe class imbalance (8.2:1 negative-to-positive ratio), improving model
-                                robustness for rare fire events.
+                                Engineered custom loss functions (Hybrid Poisson/BCE) and calibrated classification
+                                thresholds
+                                to handle extreme class imbalance in wildfire events.
                             </li>
                             <li>
-                                <strong>Model Evaluation & Deployment:</strong>
-                                Designed comprehensive evaluation pipelines with automated assessment processes,
-                                generating geospatial predictions and training analytics for production deployment.
+                                <strong>Multi-Source Data Fusion:</strong>
+                                Processed ERA5 weather reanalysis and vegetation indices (LAI, NDVI) across 116,000+
+                                time-county observations.
                             </li>
                         </ul>
 
@@ -213,27 +207,22 @@
                         <h4>Key Contributions:</h4>
                         <ul class="contribution-list">
                             <li>
-                                <strong>DeepSeek Model Integration & Optimization:</strong>
-                                Led the integration and fine-tuning of DeepSeek LLM for narrative analysis tasks,
-                                developing custom prompt engineering strategies to enhance model performance on
-                                taxonomy classification and conflict detection.
+                                <strong>TL;DR Taxonomy Analysis:</strong>
+                                Conducting research on TL;DR taxonomy levels 1-4, leveraging <strong>DeepSeek
+                                    LLM</strong>
+                                to improve narrative conflict detection and holistic understanding.
                             </li>
                             <li>
-                                <strong>Model Evaluation Methodologies:</strong>
-                                Designed and implemented comprehensive evaluation frameworks for narrative conflict
-                                detection, improving model accuracy through iterative refinement of assessment
-                                processes and holistic analytical approaches.
+                                <strong>Evaluation Pipelines:</strong>
+                                Architecting evaluation pipelines for Comparative Narrative Analysis (CNA) to detect
+                                narrative conflicts and bias across diverse text corpora using LLMs (GPT-4, DeepSeek,
+                                Claude).
                             </li>
                             <li>
-                                <strong>Multi-Level Taxonomy Processing:</strong>
-                                Developed pipelines for automated narrative classification across four hierarchical
-                                taxonomy levels, enabling nuanced understanding of narrative structures and
-                                relationships.
-                            </li>
-                            <li>
-                                <strong>Cross-Narrative Analysis Tools:</strong>
-                                Built tools to identify and analyze overlapping themes and conflicts across diverse
-                                narrative texts, facilitating comparative insights at scale.
+                                <strong>Metric Engineering:</strong>
+                                Enhancing model evaluation granularity by engineering specific metrics for narrative
+                                overlap,
+                                uniqueness, and holistic summarization.
                             </li>
                         </ul>
 
@@ -261,17 +250,18 @@
                     <div class="timeline-content">
                         <h3>Software Development Engineer</h3>
                         <p class="company">Intel | Chandler, Arizona</p>
-                        <p class="date">June 2022 - August 2024</p>
+                        <p class="date">June 2022 - Aug. 2023</p>
                         <ul class="achievements">
                             <li>
-                                Spearheaded resolution of critical issues in in-house software services,
-                                achieving a <strong>27% increase in software uptime</strong> and significantly
-                                improving system reliability.
+                                Resolved critical production issues in distributed microservices, analyzing root causes
+                                (race conditions, memory leaks) to exercise a <strong>27% increase in software
+                                    uptime</strong>.
                             </li>
                             <li>
-                                Streamlined internal production database systems using <strong>PL/SQL</strong>,
-                                substantially boosting reliability and performance across semiconductor fabrication
-                                operations.
+                                Optimized production database interactions using advanced <strong>PL/SQL</strong>
+                                techniques,
+                                significantly reducing query latency and boosting system reliability for high-volume
+                                data streams.
                             </li>
                             <li>
                                 Orchestrated validation of software and middleware services across server clusters,
@@ -279,9 +269,8 @@
                                 manufacturing environments.
                             </li>
                             <li>
-                                Developed and deployed custom production software solutions, contributing to an
-                                <strong>18% rise in wafer production efficiency</strong> through process automation
-                                and optimization.
+                                Developed custom automated software solutions for wafer production tracking, driving an
+                                <strong>18% increase in wafer throughput</strong> and operational efficiency.
                             </li>
                         </ul>
                         <div class="tech-stack">
@@ -302,15 +291,13 @@
                         <p class="company">General Motors | Bay City, Michigan</p>
                         <p class="date">June 2021 - August 2021</p>
                         <ul class="achievements">
-                            <li>
-                                Troubleshot and optimized robotic manufacturing systems and PLCs,
-                                <strong>reducing production downtime by 8%</strong> through proactive maintenance
-                                and system improvements.
+                            Optimized Allen-Bradley PLC logic and robotics manufacturing systems, identifying
+                            bottleneck processes to reduce production downtime by <strong>8%</strong>.
                             </li>
                             <li>
-                                Designed and implemented 10-link pressure systems with advanced controls
-                                using <strong>Siemens SIMATIC TIA 7</strong>, increasing inventory processing
-                                efficiency and decreasing manual scrapping by <strong>13%</strong>.
+                                Designed a scalable IO-Link pressure sensor network using <strong>Siemens SIMATIC STEP
+                                    7</strong>,
+                                modernizing legacy systems and decreasing inventory scrapping by <strong>13%</strong>.
                             </li>
                         </ul>
                         <div class="tech-stack">
@@ -334,22 +321,22 @@
                     <h3>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
                         </svg>
-                        Machine Learning & AI
+                        NLP & GenAI
                     </h3>
                     <div class="skill-tags">
-                        <span>PyTorch</span>
-                        <span>TensorFlow</span>
                         <span>Transformers</span>
-                        <span>LLMs</span>
-                        <span>Graph Neural Networks</span>
-                        <span>CUDA</span>
-                        <span>Deep Learning</span>
-                        <span>Computer Vision</span>
-                        <span>NLP</span>
+                        <span>BERT</span>
+                        <span>GPT</span>
+                        <span>Beam Search</span>
+                        <span>Nucleus Sampling</span>
+                        <span>BPE/WordPiece</span>
+                        <span>BiLSTM</span>
+                        <span>CRF</span>
+                        <span>HMM</span>
                     </div>
                 </div>
 
@@ -357,20 +344,19 @@
                     <h3>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
-                            <polyline points="16 18 22 12 16 6" />
-                            <polyline points="8 6 2 12 8 18" />
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
                         </svg>
-                        Programming & Tools
+                        Deep Learning
                     </h3>
                     <div class="skill-tags">
-                        <span>Python</span>
-                        <span>C++</span>
-                        <span>Java</span>
-                        <span>SQL</span>
-                        <span>HTML/CSS/JS</span>
-                        <span>Git/GitHub</span>
-                        <span>Docker</span>
-                        <span>Linux</span>
+                        <span>PyTorch</span>
+                        <span>Mamba (SSM)</span>
+                        <span>GCNs/GNNs</span>
+                        <span>1D-CNNs</span>
+                        <span>Attention Mechanisms</span>
+                        <span>Contrastive Learning</span>
                     </div>
                 </div>
 
@@ -383,16 +369,16 @@
                             <path
                                 d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                         </svg>
-                        Data Science & Analysis
+                        Data Science
                     </h3>
                     <div class="skill-tags">
-                        <span>NumPy</span>
                         <span>Pandas</span>
+                        <span>NumPy</span>
                         <span>Scikit-learn</span>
-                        <span>XGBoost</span>
-                        <span>Matplotlib</span>
-                        <span>NetCDF</span>
-                        <span>Geospatial Analysis</span>
+                        <span>ROC-AUC/F1 Optimization</span>
+                        <span>Hypothesis Testing</span>
+                        <span>Bayesian Methods</span>
+                        <span>Feature Engineering</span>
                     </div>
                 </div>
 
@@ -411,16 +397,19 @@
                             <line x1="1" y1="9" x2="4" y2="9" />
                             <line x1="1" y1="14" x2="4" y2="14" />
                         </svg>
-                        Systems & Infrastructure
+                        Systems & Tools
                     </h3>
                     <div class="skill-tags">
-                        <span>HPC</span>
-                        <span>SLURM</span>
-                        <span>GPU Computing</span>
-                        <span>Multithreading</span>
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>CUDA</span>
                         <span>MPI</span>
-                        <span>Distributed Systems</span>
-                        <span>Cloud Computing</span>
+                        <span>SLURM</span>
+                        <span>Linux</span>
+                        <span>A100 Optimization</span>
+                        <span>Mixed Precision (AMP)</span>
+                        <span>GeoJSON</span>
                     </div>
                 </div>
             </div>
@@ -432,14 +421,17 @@
                     <div class="project-card">
                         <h4>Customer Churn Prediction Model</h4>
                         <p>
-                            Built a comprehensive machine learning pipeline using scikit-learn, XGBoost,
-                            and LightGBM to predict customer churn with advanced feature engineering and
-                            model ensembling techniques.
+                            Built an end-to-end ML pipeline with ensemble methods (XGBoost, LightGBM). Implemented
+                            rigorous feature engineering (SMOTE, categorical encoding) and evaluated models using
+                            <strong>ROC-AUC, Precision-Recall curves, and Calibration Plots</strong>.
+                            Optimized hyperparameters via <strong>Bayesian techniques</strong>, analyzing decision
+                            boundaries to reduce churn significantly.
                         </p>
                         <div class="tech-stack small">
                             <span class="tech-tag">XGBoost</span>
                             <span class="tech-tag">LightGBM</span>
-                            <span class="tech-tag">Feature Engineering</span>
+                            <span class="tech-tag">SMOTE</span>
+                            <span class="tech-tag">Bayesian Optimization</span>
                         </div>
                     </div>
                 </div>
