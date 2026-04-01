@@ -420,18 +420,36 @@
                 <h3 class="subsection-title">Notable Projects</h3>
                 <div class="project-grid">
                     <div class="project-card">
-                        <h4>StressID: Physiological Audio Stress Detection Pipeline</h4>
+                        <h4>StressID: Multimodal Physiological Stress Detection Pipeline</h4>
                         <p>
-                            Built a three-branch multimodal pipeline (Audio, Face, Gesture) for stress detection using the <strong>NeurIPS 2023 StressID dataset</strong>.
-                            Engineered the Audio Branch with a custom <strong>CNN-Transformer architecture</strong> and Learnable Attention Pooling to preserve temporal dynamics across spectrograms.
-                            Applied subject-level Stratified K-Fold cross-validation and class-weighted loss functions to handle extreme class imbalance, with a late fusion architecture combining LSTM and 1D-CNN embeddings.
+                            Designed and built a three-branch multimodal pipeline (Audio, Face, Gesture) for real-time stress classification using the <strong>NeurIPS 2023 StressID dataset</strong>.
                         </p>
+                        <h4 style="font-size:0.85rem; margin: 8px 0 4px;">Key Contributions:</h4>
+                        <ul class="contribution-list">
+                            <li>
+                                <strong>Custom End-to-End Audio Pipeline:</strong>
+                                Engineered a full preprocessing and modeling pipeline from raw audio — extracting <strong>128-bin Mel Spectrograms</strong> at 16kHz with per-sample normalization and <strong>SpecAugment</strong> (frequency + time masking) for robust training.
+                            </li>
+                            <li>
+                                <strong>CNN-Transformer Architecture:</strong>
+                                Built a custom <strong>3-block CNN</strong> (Conv2d → BatchNorm → ReLU → MaxPool) feeding into a <strong>Transformer Encoder</strong> (2 layers, 4 attention heads) with sinusoidal positional encoding and a <strong>Learnable Attention Pooling</strong> layer, outperforming mean-pooling baselines.
+                            </li>
+                            <li>
+                                <strong>Baseline Benchmarking:</strong>
+                                Compared against a frozen <strong>Wav2Vec2</strong> (facebook/wav2vec2-base) baseline using HuggingFace Transformers, with an MLP classification head trained on top of extracted embeddings.
+                            </li>
+                            <li>
+                                <strong>Robust Evaluation:</strong>
+                                Implemented subject-level <strong>Stratified 5-Fold Cross-Validation</strong> with class-weighted CrossEntropyLoss to address extreme class imbalance (71% stressed), reporting Macro F1, AUC-ROC, MCC, and Balanced Accuracy across folds.
+                            </li>
+                        </ul>
                         <div class="tech-stack small">
                             <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Transformers</span>
-                            <span class="tech-tag">CNNs</span>
+                            <span class="tech-tag">CNN-Transformer</span>
                             <span class="tech-tag">Wav2Vec2</span>
-                            <span class="tech-tag">Audio Processing</span>
+                            <span class="tech-tag">Mel Spectrogram</span>
+                            <span class="tech-tag">SpecAugment</span>
+                            <span class="tech-tag">MediaPipe</span>
                             <span class="tech-tag">Late Fusion</span>
                         </div>
                     </div>
