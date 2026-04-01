@@ -336,6 +336,7 @@
                         <span>BiLSTM</span>
                         <span>CRF</span>
                         <span>HMM</span>
+                        <span>LoRA / PEFT</span>
                     </div>
                 </div>
 
@@ -437,17 +438,18 @@
                     </div>
                     
                     <div class="project-card">
-                        <h4>Multimodal LLMs & Instant Knowledge Injection (Active)</h4>
+                        <h4>StressID Multimodal Detection Pipeline</h4>
                         <p>
-                            Conducting PhD research on Parameter-Efficient Fine-Tuning (PEFT) and hypernetwork architectures. 
-                            Investigating novel methods such as <strong>Text-to-LoRA</strong> and <strong>Doc-to-LoRA</strong> (SakanaAI) to achieve instant context internalization. 
-                            The research focuses on rapidly injecting domain-specific knowledge into LLMs on-demand, enhancing specialized dialogue applications and chatbots while bypassing the high inference latency and KV-cache overhead of standard context distillation.
+                            Developing a comprehensive three-branch multimodal pipeline (Audio, Face, Gesture) for stress detection using the <strong>NeurIPS 2023 StressID dataset</strong>. 
+                            Engineered the Audio Branch using a custom <strong>CNN-Transformer architecture</strong> with Learnable Attention Pooling to preserve temporal dynamics across spectrograms. 
+                            Implemented robust evaluation frameworks with subject-level Stratified K-Fold cross-validation and custom class-weighted loss functions to handle extreme class imbalance, culminating in a planned late fusion architecture combining LSTM and 1D-CNN embeddings.
                         </p>
                         <div class="tech-stack small">
-                            <span class="tech-tag">Multimodal LLMs</span>
-                            <span class="tech-tag">LoRA</span>
-                            <span class="tech-tag">Hypernetworks</span>
-                            <span class="tech-tag">PEFT</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">CNNs</span>
+                            <span class="tech-tag">Audio Processing</span>
+                            <span class="tech-tag">Late Fusion</span>
                         </div>
                     </div>
                 </div>
