@@ -198,7 +198,7 @@
 
                     <div class="research-description">
                         <p>
-                            Conducted research on TL;DR taxonomy levels 1-4, leveraging large language models
+                            Conducted research on TELeR taxonomy levels 1-4, leveraging large language models
                             to improve narrative conflict detection, overlaps, and holistic understanding across
                             multiple analytical tasks.
                         </p>
@@ -206,8 +206,8 @@
                         <h4>Key Contributions:</h4>
                         <ul class="contribution-list">
                             <li>
-                                <strong>TL;DR Taxonomy Analysis:</strong>
-                                Conducting research on TL;DR taxonomy levels 1-4, leveraging <strong>DeepSeek
+                                <strong>TELeR Taxonomy Analysis:</strong>
+                                Conducting research on TELeR taxonomy levels 1-4, leveraging <strong>DeepSeek
                                     LLM</strong>
                                 to improve narrative conflict detection and holistic understanding.
                             </li>
@@ -290,9 +290,8 @@
                         <p class="company">General Motors | Bay City, Michigan</p>
                         <p class="date">June 2021 - August 2021</p>
                         <ul class="achievements">
-                            Optimized Allen-Bradley PLC logic and robotics manufacturing systems, identifying
-                            bottleneck processes to reduce production downtime by <strong>8%</strong>.
-                            </li>
+                            <li>
+                            Diagnosed and resolved failures in robotics systems and PLCs, cutting production downtime by <strong>8%</strong>.
                             <li>
                                 Designed a scalable IO-Link pressure sensor network using <strong>Siemens SIMATIC STEP
                                     7</strong>,
@@ -421,35 +420,33 @@
                 <h3 class="subsection-title">Notable Projects</h3>
                 <div class="project-grid">
                     <div class="project-card">
-                        <h4>Customer Churn Prediction Model</h4>
+                        <h4>StressID: Physiological Audio Stress Detection Pipeline</h4>
                         <p>
-                            Built an end-to-end ML pipeline with ensemble methods (XGBoost, LightGBM). Implemented
-                            rigorous feature engineering (SMOTE, categorical encoding) and evaluated models using
-                            <strong>ROC-AUC, Precision-Recall curves, and Calibration Plots</strong>.
-                            Optimized hyperparameters via <strong>Bayesian techniques</strong>, analyzing decision
-                            boundaries to reduce churn significantly.
-                        </p>
-                        <div class="tech-stack small">
-                            <span class="tech-tag">XGBoost</span>
-                            <span class="tech-tag">LightGBM</span>
-                            <span class="tech-tag">SMOTE</span>
-                            <span class="tech-tag">Bayesian Optimization</span>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h4>StressID Multimodal Detection Pipeline</h4>
-                        <p>
-                            Developing a comprehensive three-branch multimodal pipeline (Audio, Face, Gesture) for stress detection using the <strong>NeurIPS 2023 StressID dataset</strong>. 
-                            Engineered the Audio Branch using a custom <strong>CNN-Transformer architecture</strong> with Learnable Attention Pooling to preserve temporal dynamics across spectrograms. 
-                            Implemented robust evaluation frameworks with subject-level Stratified K-Fold cross-validation and custom class-weighted loss functions to handle extreme class imbalance, culminating in a planned late fusion architecture combining LSTM and 1D-CNN embeddings.
+                            Built a three-branch multimodal pipeline (Audio, Face, Gesture) for stress detection using the <strong>NeurIPS 2023 StressID dataset</strong>.
+                            Engineered the Audio Branch with a custom <strong>CNN-Transformer architecture</strong> and Learnable Attention Pooling to preserve temporal dynamics across spectrograms.
+                            Applied subject-level Stratified K-Fold cross-validation and class-weighted loss functions to handle extreme class imbalance, with a late fusion architecture combining LSTM and 1D-CNN embeddings.
                         </p>
                         <div class="tech-stack small">
                             <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">Transformers</span>
                             <span class="tech-tag">CNNs</span>
                             <span class="tech-tag">Audio Processing</span>
+                            <span class="tech-tag">LoRA / PEFT</span>
                             <span class="tech-tag">Late Fusion</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>Customer Churn Prediction Model</h4>
+                        <p>
+                            Built an end-to-end ML pipeline using ensemble methods (XGBoost, LightGBM) with rigorous feature engineering (SMOTE, categorical encoding). Evaluated models using
+                            <strong>ROC-AUC, Precision-Recall curves, and Calibration Plots</strong> and optimized hyperparameters via <strong>Bayesian techniques</strong> to deliver actionable churn reduction strategies.
+                        </p>
+                        <div class="tech-stack small">
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">LightGBM</span>
+                            <span class="tech-tag">SMOTE</span>
+                            <span class="tech-tag">Bayesian Optimization</span>
                         </div>
                     </div>
                 </div>
@@ -498,7 +495,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Deyang Hsu. All rights reserved.</p>
+            <p>&copy; 2026 Deyang Hsu. All rights reserved.</p>
             <p class="footer-note">Built with passion for AI and innovation</p>
         </div>
     </footer>
