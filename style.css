@@ -967,6 +967,64 @@ section {
     }
 }
 
+/* Publications Section */
+.publications {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-secondary);
+}
+
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.publication-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    transition: var(--transition);
+}
+
+.publication-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.publication-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.publication-title a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.publication-title a:hover {
+    text-decoration: underline;
+}
+
+.publication-authors {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
+}
+
+.publication-venue {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.publication-abstract {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
 section>* {
     animation: fadeIn 0.6s ease-out;
 }
