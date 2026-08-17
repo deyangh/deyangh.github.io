@@ -484,6 +484,50 @@
                 <h3 class="subsection-title">Notable Projects</h3>
                 <div class="project-grid">
                     <div class="project-card">
+                        <h4>AgentGauntlet: Security Testing Harness for LLM Agents</h4>
+                        <p>
+                            Designed and shipped an open-source (Apache-2.0) evaluation harness &mdash; <strong>"pytest for agent security"</strong> &mdash; that runs any LLM agent through <strong>16 adversarial scenarios across 8 attack categories</strong> (prompt injection, data exfiltration, confused-deputy, tool misuse) and fails CI on security regressions.
+                        </p>
+                        <h4 style="font-size:0.85rem; margin: 8px 0 4px;">Key Contributions:</h4>
+                        <ul class="contribution-list">
+                            <li>
+                                <strong>Harness-Owned Agent Loop:</strong>
+                                Architected the tool-execution loop so the harness controls where adversarial payloads are planted (inside tool results, the real indirect-injection channel) and records every tool call &mdash; making attack success an <strong>observed action rather than an inference</strong>.
+                            </li>
+                            <li>
+                                <strong>Deterministic Detection:</strong>
+                                Built per-run <strong>canary-token</strong> detectors so a compromise is an exact, reproducible signal (a secret crossing an outbound boundary), not an LLM judgment; an optional LLM-judge is segregated and flagged non-deterministic.
+                            </li>
+                            <li>
+                                <strong>Dual-Axis Scoring:</strong>
+                                Reports <strong>Attack Success Rate alongside task Utility</strong>, so a model that simply refuses everything cannot game the benchmark &mdash; a real finding surfaced in the results, where two models tied on attack success but split on utility.
+                            </li>
+                            <li>
+                                <strong>Model-Agnostic Adapters:</strong>
+                                Wrote <strong>4 provider-agnostic adapters</strong> (LiteLLM for any frontier model, plus callable / subprocess / offline-mock) so the same YAML scenario runs unchanged against Claude, GPT, Gemini, or a user's own agent in any language.
+                            </li>
+                            <li>
+                                <strong>Benchmark, Leaderboard &amp; CI:</strong>
+                                Ran a cross-model benchmark (local via Ollama, $0), published an auto-generated leaderboard with a robustness-vs-utility visualization, and shipped a <strong>pytest plugin</strong>, HTML/JSON/JUnit reports, <strong>50 unit tests</strong>, and green CI (ruff + mypy&nbsp;--strict).
+                            </li>
+                        </ul>
+                        <div class="tech-stack small">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LiteLLM</span>
+                            <span class="tech-tag">Pydantic</span>
+                            <span class="tech-tag">pytest</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">Agent Security</span>
+                            <span class="tech-tag">Prompt Injection</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                        <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <a href="https://deyangh.github.io/agentgauntlet/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://github.com/deyangh/agentgauntlet" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
                         <h4>StressID: Multimodal Physiological Stress Detection Pipeline</h4>
                         <p>
                             Designed and built a three-branch multimodal pipeline (Audio, Face, Gesture) for real-time stress classification using the <strong>NeurIPS 2023 StressID dataset</strong>.
