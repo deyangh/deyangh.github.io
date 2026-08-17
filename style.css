@@ -403,6 +403,11 @@ section {
     background: var(--bg-darker);
 }
 
+/* Notable Projects Section */
+.projects {
+    background: var(--bg-secondary);
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
